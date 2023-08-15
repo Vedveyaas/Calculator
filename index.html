@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>A Working Calculator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <h1>Calculator</h1>
+   <div class="container">
+      <div class="row display-row">
+         <input type="text" class="display-box" id="result" placeholder="Enter Value..." disabled>
+      </div>
+      <div class="row">
+         <input type="button" value="AC" class="button special-btn" onclick="ClearALL()">
+         <input type="button" value="⌫" class="button special-btn" onclick="backspace()">
+         <input type="button" value="." class=" button point special-btn" onclick="display('.')">
+         <!-- <input type="button" value="%" class="button" onclick="display('%')"> -->
+         <input type="button" value="/" class="button operator" onclick="display('/')">
+      </div>
+      <div class="row">
+         <input type="button" value="1" class="button num" onclick="display('1')">
+         <input type="button" value="2" class="button num" onclick="display('2')">
+         <input type="button" value="3" class="button num" onclick="display('3')">
+         <input type="button" value="X" class="button operator" onclick="display('*')" id="multi">
+      </div>
+      <div class="row">
+         <input type="button" value="4" class="button num" onclick="display('4')">
+         <input type="button" value="5" class="button num" onclick="display('5')">
+         <input type="button" value="6" class="button num" onclick="display('6')">
+         <input type="button" value="-" class="button operator  minus" onclick="display('-')">
+      </div>
+      <div class="row">
+         <input type="button" value="7" class="button num" onclick="display('7')">
+         <input type="button" value="8" class="button num" onclick="display('8')">
+         <input type="button" value="9" class="button num" onclick="display('9')">
+         <input type="button" value="+" class="button operator" onclick="display('+')">
+      </div>
+      <div class="row">
+         <input type="button" value="00" class="button num" onclick="display('0')">
+         <input type="button" value="0" class="button num" onclick="display('0')">
+         <input type="button" value="=" class="button" id="equal" onclick="calculate()">
+         <input type="button" value="%" class="button operator" onclick="display('%')">
+         <!-- <input type="button" value="." class=" button point" onclick="display('.')"> -->
+      </div>
+   </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/1f4ed2e09b.js" crossorigin="anonymous"></script>
+
+</html>
